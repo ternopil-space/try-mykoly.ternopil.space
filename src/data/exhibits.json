@@ -1,17 +1,102 @@
 [
 	{
-		"slug": "horeca-bar-service-photo",
-		"src": "gallery/demo-1.webp",
-		"alt": "Horeca bar service photo"
+		"slug": "tri-mykoly-rg-food-1",
+		"src": "https://img3.restaurantguru.ru/c7e5-Restaurant-Tri-Mikoli-food.jpg",
+		"alt": "Три Миколи - подача страв"
 	},
 	{
-		"slug": "horeca-hotel-reception-photo-1",
-		"src": "gallery/demo-2.webp",
-		"alt": "Horeca hotel reception photo"
+		"slug": "tri-mykoly-rg-photo-2",
+		"src": "https://img3.restaurantguru.ru/ccf2-Restaurant-Tri-Mikoli-photo-2.jpg",
+		"alt": "Три Миколи - фото ресторану для галереї"
 	},
 	{
-		"slug": "horeca-hotel-reception-photo-2",
-		"src": "gallery/demo-3.webp",
-		"alt": "Horeca hotel reception photo"
+		"slug": "tri-mykoly-rg-photo-1",
+		"src": "https://img.restaurantguru.ru/c5/Restaurant-Tri-Mikoli-photo.jpg",
+		"alt": "Три Миколи - атмосферне фото закладу"
+	},
+	{
+		"slug": "tri-mykoly-reviewstime-3",
+		"src": "https://ua.reviewstime.com/i/2022/08/review_62fb3f0473510.jpeg",
+		"alt": "Три Миколи - фото подачі в ресторані"
+	},
+	{
+		"slug": "tri-mykoly-reviewstime-4",
+		"src": "https://ua.reviewstime.com/i/2022/08/review_62fb3efc9142d.jpeg",
+		"alt": "Три Миколи - ще один кадр з ресторану"
+	},
+	{
+		"slug": "tri-mykoly-reviewstime-hero-1",
+		"src": "https://ua.reviewstime.com/i/2022/08/review_62fb3f055af0e.jpeg",
+		"alt": "Три Миколи - нове головне фото інтер'єру"
+	},
+	{
+		"slug": "tri-mykoly-reviewstime-hero-2",
+		"src": "https://ua.reviewstime.com/i/2022/08/review_62fb3f04e213c.jpeg",
+		"alt": "Три Миколи - нове фото залу ресторану"
+	},
+	{
+		"slug": "tri-mykoly-paramoloda-hero-1",
+		"src": "https://paramoloda.ua/upload/iblock/87f/87f7fce0cd94971f39929fbea981c2c5.jpg",
+		"alt": "Три Миколи - нове атмосферне фото ресторану"
+	},
+	{
+		"slug": "tri-mykoly-paramoloda-hero-2",
+		"src": "https://paramoloda.ua/upload/iblock/4da/4da1857aa6572275e56ae92fb8f570e2.jpg",
+		"alt": "Три Миколи - новий кадр для початку галереї"
+	},
+	{
+		"slug": "tri-mykoly-rg-interior-1",
+		"src": "https://img3.restaurantguru.ru/c5/Restaurant-Tri-Mikoli-interior.jpg",
+		"alt": "Три Миколи - інтер'єр ресторану"
+	},
+	{
+		"slug": "tri-mykoly-reviewstime-1",
+		"src": "https://ua.reviewstime.com/i/2022/08/review_62fb3f055af0e.jpeg",
+		"alt": "Три Миколи - фото гостей та інтер'єру"
+	},
+	{
+		"slug": "tri-mykoly-reviewstime-2",
+		"src": "https://ua.reviewstime.com/i/2022/08/review_62fb3f04e213c.jpeg",
+		"alt": "Три Миколи - фото залу ресторану"
+	},
+	{
+		"slug": "tri-mykoly-reviewstime-5",
+		"src": "https://ua.reviewstime.com/i/2022/08/review_62fb3efbbccbe.jpeg",
+		"alt": "Три Миколи - фото атмосфери та деталей"
+	},
+	{
+		"slug": "tri-mykoly-paramoloda-1",
+		"src": "https://paramoloda.ua/upload/iblock/87f/87f7fce0cd94971f39929fbea981c2c5.jpg",
+		"alt": "Три Миколи - фото ресторану з каталогу"
+	},
+	{
+		"slug": "tri-mykoly-paramoloda-2",
+		"src": "https://paramoloda.ua/upload/iblock/4da/4da1857aa6572275e56ae92fb8f570e2.jpg",
+		"alt": "Три Миколи - інтер'єр і сервірування"
+	},
+	{
+		"slug": "tri-mykoly-paramoloda-3",
+		"src": "https://paramoloda.ua/upload/iblock/761/7619bc5edd93888db82e33d252c13401.jpg",
+		"alt": "Три Миколи - фото зали для гостей"
+	},
+	{
+		"slug": "tri-mykoly-paramoloda-4",
+		"src": "https://paramoloda.ua/upload/iblock/0b0/0b067200093c1d93cab46fc5e98b6e70.jpg",
+		"alt": "Три Миколи - кадр із меню та подачі"
+	},
+	{
+		"slug": "tri-mykoly-paramoloda-5",
+		"src": "https://paramoloda.ua/upload/iblock/03e/03ea249bfdcafd865ab3db7d9a48e44d.jpg",
+		"alt": "Три Миколи - простір ресторану для сімейного відпочинку"
+	},
+	{
+		"slug": "tri-mykoly-paramoloda-6",
+		"src": "https://paramoloda.ua/upload/iblock/052/052344976ff9ddba7fbd87b792959383.jpg",
+		"alt": "Три Миколи - фото страв або інтер'єру"
+	},
+	{
+		"slug": "tri-mykoly-paramoloda-7",
+		"src": "https://paramoloda.ua/upload/iblock/9c9/9c9d179bd02fcbb40d8216818509da6d.jpg",
+		"alt": "Три Миколи - деталі ресторану для галереї"
 	}
 ]
