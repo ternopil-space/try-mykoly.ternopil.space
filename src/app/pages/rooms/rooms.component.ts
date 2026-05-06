@@ -43,13 +43,13 @@ export class RoomsComponent {
 		},
 		{
 			label: 'Chat on Viber',
-			href: 'https://example.com/horeca-demo/viber',
+			href: 'https://example.com/три-миколи-demo/viber',
 			description: 'Demo chat for quick booking',
 		},
 		{
 			label: 'Chat on Telegram',
-			href: 'https://example.com/horeca-demo/telegram',
-			description: '@horeca_demo',
+			href: 'https://example.com/три-миколи-demo/telegram',
+			description: '@три-миколи_demo',
 		},
 	];
 }
