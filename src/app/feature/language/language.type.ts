@@ -1,15 +1,5 @@
 export type LanguageCode =
 	| 'ua'
-	| 'cs'
-	| 'nl'
 	| 'en'
-	| 'fr'
 	| 'de'
-	| 'el'
-	| 'hu'
-	| 'it'
-	| 'pl'
-	| 'pt'
-	| 'ro'
-	| 'es'
-	| 'sv';
+	| 'es';

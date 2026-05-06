@@ -12,15 +12,64 @@
 		"slug": "drinks"
 	},
 	{
-		"name": "Breakfasts",
-		"description": "Morning meals and light starters.",
-		"parent": "food",
-		"slug": "breakfasts"
-	},
-	{
-		"name": "Coffee",
-		"description": "Hot and cold coffee drinks.",
-		"parent": "drinks",
-		"slug": "coffee"
-	}
+    "name": "New Arrivals",
+    "description": "Discover our latest seasonal additions and chef's specials.",
+    "parent": "food",
+    "slug": "new-arrivals"
+},
+{
+    "name": "Перші страви",
+    "description": "Гарячі та поживні супи та бульйони, що готуються щодня.",
+    "parent": "food",
+    "slug": "pershi-stravy"
+},
+{
+    "name": "Салати",
+    "description": "Вибір свіжих та хрустких салатів з яскравими сезонними овочами.",
+    "parent": "food",
+    "slug": "salaty"
+},
+{
+    "name": "Страви під чарочку",
+    "description": "Традиційні закуски, що ідеально підкреслюють смак міцних напоїв.",
+    "parent": "food",
+    "slug": "stravy-pid-charochku"
+},
+{
+    "name": "Сімейні страви",
+    "description": "Ситні порції для великої компанії, створені для спільного застілля.",
+    "parent": "food",
+    "slug": "simeyni-stravy"
+},
+{
+    "name": "Гарніри",
+    "description": "Класичні та авторські додатки до ваших основних страв.",
+    "parent": "food",
+    "slug": "harniry"
+},
+{
+    "name": "Страви з печі",
+    "description": "Ароматні страви, приготовлені в печі за традиційними рецептами.",
+    "parent": "food",
+    "slug": "stravy-z-pechi"
+},
+{
+    "name": "Піца",
+    "description": "Класична італійська піца з різноманітними начинками на тонкому тісті.",
+    "parent": "food",
+    "slug": "pitsa"
+},
+{
+    "name": "Десерти",
+    "description": "Вишукані солодкі страви, які стануть ідеальним завершенням вашої трапези.",
+    "parent": "food",
+    "slug": "deserty"
+},
+{
+    "name": "Додатки",
+    "description": "Додаткові інгредієнти та соуси, щоб зробити вашу страву ще смачнішою.",
+    "parent": "food",
+    "slug": "dodatky"
+}
+	
 ]
