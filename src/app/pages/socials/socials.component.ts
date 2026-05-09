@@ -1,5 +1,6 @@
 import { NgOptimizedImage } from '@angular/common';
 import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { TranslatePipe } from '../../shared/translate.pipe';
 
 type ContactCard = {
 	label: string;
@@ -19,7 +20,7 @@ type SocialCard = {
 };
 
 @Component({
-	imports: [NgOptimizedImage],
+	imports: [NgOptimizedImage, TranslatePipe],
 	templateUrl: './socials.component.html',
 	styleUrl: './socials.component.scss',
 	changeDetection: ChangeDetectionStrategy.OnPush,

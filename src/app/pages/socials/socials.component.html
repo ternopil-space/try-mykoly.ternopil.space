@@ -4,14 +4,13 @@
 	>
 		<div class="border-b border-[var(--c-border)] px-4 py-5 sm:px-6 sm:py-6">
 			<p class="text-[12px] font-semibold uppercase tracking-[0.18em] text-[var(--c-secondary)]">
-				Socials
+				{{ 'Socials' | translate }}
 			</p>
 			<h1 class="mt-2 text-[1.8rem] font-semibold leading-9 text-[var(--c-text-secondary)]">
-				Сімейна ресторація «ТРИ МИКОЛИ»
+				{{ 'Сімейна ресторація «ТРИ МИКОЛИ»' | translate }}
 			</h1>
 			<p class="mt-2 max-w-[42rem] text-sm leading-6 text-[var(--c-text-muted)]">
-				Офіційні контакти та підтверджені соцмережі ресторану у Тернополі. На сторінці залишені
-				лише канали, які ви надали: Instagram, Facebook і Linktree.
+				{{ 'Офіційні контакти та підтверджені соцмережі ресторану у Тернополі. На сторінці залишені лише канали, які ви надали: Instagram, Facebook і Linktree.' | translate }}
 			</p>
 		</div>
 
@@ -24,17 +23,17 @@
 							[href]="contact.href"
 							[target]="contact.external ? '_blank' : null"
 							[rel]="contact.external ? 'noreferrer nofollow' : null"
-							[attr.aria-label]="contact.ariaLabel ?? contact.label"
+							[attr.aria-label]="contact.ariaLabel ? (contact.ariaLabel | translate) : (contact.label | translate)"
 						>
 							<div class="min-w-0">
 								<p class="text-[12px] font-semibold uppercase tracking-[0.18em] text-[var(--c-secondary)]">
-									{{ contact.label }}
+									{{ contact.label | translate }}
 								</p>
 								<p class="mt-2 text-lg font-semibold leading-7 text-[var(--c-text-secondary)]">
 									{{ contact.value }}
 								</p>
 								<p class="mt-2 text-sm leading-6 text-[var(--c-text-muted)]">
-									{{ contact.description }}
+									{{ contact.description | translate }}
 								</p>
 							</div>
 						</a>
@@ -43,13 +42,13 @@
 							class="contact-card rounded-[1.1rem] border border-[var(--c-border)] bg-[var(--c-bg-primary)] p-4 shadow-[var(--shadow-sm)]"
 						>
 							<p class="text-[12px] font-semibold uppercase tracking-[0.18em] text-[var(--c-secondary)]">
-								{{ contact.label }}
+								{{ contact.label | translate }}
 							</p>
 							<p class="mt-2 text-lg font-semibold leading-7 text-[var(--c-text-secondary)]">
 								{{ contact.value }}
 							</p>
 							<p class="mt-2 text-sm leading-6 text-[var(--c-text-muted)]">
-								{{ contact.description }}
+								{{ contact.description | translate }}
 							</p>
 						</div>
 					}
@@ -64,16 +63,16 @@
 					<img
 						class="mx-auto h-auto w-[11rem] drop-shadow-[0_14px_30px_rgba(0,0,0,0.16)] sm:w-[12.5rem]"
 						ngSrc="logo.png"
-						alt="Три Миколи"
+						alt="{{ 'Три Миколи' | translate }}"
 						width="720"
 						height="720"
 						priority
 					/>
 					<p class="mt-4 text-[12px] font-semibold uppercase tracking-[0.18em] text-[var(--c-secondary)]">
-						Тернопіль
+						{{ 'Тернопіль' | translate }}
 					</p>
 					<p class="mt-3 max-w-[14rem] text-sm leading-6 text-[var(--c-text-muted)]">
-						Меню, фото, акції та швидкий перехід до всіх підтверджених онлайн-майданчиків.
+						{{ 'Меню, фото, акції та швидкий перехід до всіх підтверджених онлайн-майданчиків.' | translate }}
 					</p>
 				</div>
 			</div>
@@ -83,14 +82,13 @@
 					class="contact-card rounded-[1.1rem] border border-[var(--c-border)] bg-[var(--c-bg-primary)] p-4 shadow-[var(--shadow-sm)]"
 				>
 					<p class="text-[12px] font-semibold uppercase tracking-[0.18em] text-[var(--c-secondary)]">
-						Що знайдете онлайн
+						{{ 'Що знайдете онлайн' | translate }}
 					</p>
 					<p class="mt-2 text-lg font-semibold text-[var(--c-text-secondary)]">
-						Меню, фото, акції та контакти
+						{{ 'Меню, фото, акції та контакти' | translate }}
 					</p>
 					<p class="mt-2 text-sm leading-6 text-[var(--c-text-muted)]">
-						Instagram показує життя закладу, Facebook зберігає контакти й відгуки, а Linktree
-						веде до меню, TikTok та інших корисних посилань.
+					{{ 'Instagram показує життя закладу, Facebook зберігає контакти й відгуки, а Linktree веде до меню, TikTok та інших корисних посилань.' | translate }}
 					</p>
 				</div>
 			</div>
@@ -104,7 +102,7 @@
 						[href]="social.href"
 						target="_blank"
 						rel="noreferrer nofollow"
-						[attr.aria-label]="social.ariaLabel"
+						[attr.aria-label]="social.ariaLabel | translate"
 					>
 						<div>
 							<p class="text-[12px] font-semibold uppercase tracking-[0.18em] text-[var(--c-secondary)]">
@@ -115,7 +113,7 @@
 							</p>
 						</div>
 						<p class="mt-4 text-sm leading-6 text-[var(--c-text-muted)]">
-							{{ social.description }}
+							{{ social.description | translate }}
 						</p>
 					</a>
 				}
