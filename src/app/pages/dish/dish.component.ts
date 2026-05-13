@@ -117,7 +117,7 @@ function _buildDishViewModel(category: DishCategory | null, item: Dish): DishVie
 }
 
 function _buildFacts(item: Dish, category: DishCategory | null): DishFact[] {
-	return [
+	const facts: DishFact[] = [
 		{
 			label: 'Menu section',
 			translatedValue: category?.name,
@@ -138,13 +138,16 @@ function _buildFacts(item: Dish, category: DishCategory | null): DishFact[] {
 			value: item.caloriesKcal === null ? undefined : `${item.caloriesKcal} kcal`,
 			fallbackValue: item.caloriesKcal === null ? 'Ask restaurant staff' : undefined,
 		},
-		{
-			label: 'Allergens',
-			translatedValue: item.allergens.length > 0 ? item.allergens.join(', ') : undefined,
-			fallbackValue:
-				item.allergens.length > 0 ? undefined : 'No allergen information available',
-		},
 	];
+
+	if (item.allergens.length > 0) {
+		facts.push({
+			label: 'Allergens',
+			translatedValue: item.allergens.join(', '),
+		});
+	}
+
+	return facts;
 }
 
 function _buildSuggestions(currentItem: Dish): DishSuggestion[] {

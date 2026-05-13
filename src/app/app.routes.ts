@@ -11,6 +11,16 @@ export const routes: Routes = [
 			import('./pages/menu/menu.component').then((m) => m.MenuComponent),
 	},
 	{
+		path: 'menu',
+		redirectTo: '/',
+		pathMatch: 'full',
+	},
+	{
+		path: 'Menu',
+		redirectTo: '/',
+		pathMatch: 'full',
+	},
+	{
 		path: 'favorites',
 		data: {
 			meta: buildRouteMeta('/favorites'),

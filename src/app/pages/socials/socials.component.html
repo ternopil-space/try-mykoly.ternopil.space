@@ -9,9 +9,6 @@
 			<h1 class="mt-2 text-[1.8rem] font-semibold leading-9 text-[var(--c-text-secondary)]">
 				{{ 'Сімейна ресторація «ТРИ МИКОЛИ»' | translate }}
 			</h1>
-			<p class="mt-2 max-w-[42rem] text-sm leading-6 text-[var(--c-text-muted)]">
-				{{ 'Офіційні контакти та підтверджені соцмережі ресторану у Тернополі. На сторінці залишені лише канали, які ви надали: Instagram, Facebook і Linktree.' | translate }}
-			</p>
 		</div>
 
 		<div class="grid gap-4 p-4 lg:grid-cols-[minmax(0,1fr)_18rem_minmax(0,1fr)] lg:p-6">
@@ -30,7 +27,7 @@
 									{{ contact.label | translate }}
 								</p>
 								<p class="mt-2 text-lg font-semibold leading-7 text-[var(--c-text-secondary)]">
-									{{ contact.value }}
+									{{ contact.translateValue ? (contact.value | translate) : contact.value }}
 								</p>
 								<p class="mt-2 text-sm leading-6 text-[var(--c-text-muted)]">
 									{{ contact.description | translate }}
@@ -45,7 +42,7 @@
 								{{ contact.label | translate }}
 							</p>
 							<p class="mt-2 text-lg font-semibold leading-7 text-[var(--c-text-secondary)]">
-								{{ contact.value }}
+								{{ contact.translateValue ? (contact.value | translate) : contact.value }}
 							</p>
 							<p class="mt-2 text-sm leading-6 text-[var(--c-text-muted)]">
 								{{ contact.description | translate }}
@@ -70,9 +67,6 @@
 					/>
 					<p class="mt-4 text-[12px] font-semibold uppercase tracking-[0.18em] text-[var(--c-secondary)]">
 						{{ 'Тернопіль' | translate }}
-					</p>
-					<p class="mt-3 max-w-[14rem] text-sm leading-6 text-[var(--c-text-muted)]">
-						{{ 'Меню, фото, акції та швидкий перехід до всіх підтверджених онлайн-майданчиків.' | translate }}
 					</p>
 				</div>
 			</div>

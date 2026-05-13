@@ -35,11 +35,12 @@ export class DishCategoryService {
 		categories: DishCategory[],
 		selectedCategories: DishCategory[] = [],
 	) {
-		while (categories.length) {
-			selectedCategories.push(category);
-			categories = categories[0].children ?? [];
-		}
-		this.selectedCategories.set(selectedCategories);
+		// Build the path: if selectedCategories provided, append to it; else start fresh
+		const nextSelected = selectedCategories.length > 0 
+			? [...selectedCategories, category]
+			: [category];
+		
+		this.selectedCategories.set(nextSelected);
 	}
 
 	private _mapCategory(category: DishCategory): DishCategory {

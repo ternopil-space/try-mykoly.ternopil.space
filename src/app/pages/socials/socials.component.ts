@@ -5,6 +5,7 @@ import { TranslatePipe } from '../../shared/translate.pipe';
 type ContactCard = {
 	label: string;
 	value: string;
+	translateValue?: boolean;
 	description: string;
 	href?: string;
 	external?: boolean;
@@ -37,6 +38,7 @@ export class SocialsComponent {
 		{
 			label: 'Адреса',
 			value: 'вул. Торговиця, 1а, Тернопіль, Тернопільська область, Україна',
+			translateValue: true,
 			description: 'Локація ресторації у Тернополі. Відкривається у картах.',
 			href: 'https://maps.google.com/?q=%D0%B2%D1%83%D0%BB.%20%D0%A2%D0%BE%D1%80%D0%B3%D0%BE%D0%B2%D0%B8%D1%86%D1%8F%2C%201%D0%B0%2C%20%D0%A2%D0%B5%D1%80%D0%BD%D0%BE%D0%BF%D1%96%D0%BB%D1%8C',
 			external: true,
@@ -45,11 +47,13 @@ export class SocialsComponent {
 		{
 			label: 'Графік роботи',
 			value: 'Щодня 11:00-23:00',
+			translateValue: true,
 			description: 'Актуальний режим роботи за наданою офіційною інформацією.',
 		},
 		{
 			label: 'Середній чек',
 			value: 'Приблизно 200-400 грн за страву',
+			translateValue: true,
 			description: 'Орієнтовний рівень цін для гостей ресторації.',
 		},
 	];

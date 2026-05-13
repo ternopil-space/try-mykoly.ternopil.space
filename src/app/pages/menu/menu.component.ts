@@ -6,7 +6,9 @@ import {
 	inject,
 	untracked,
 } from '@angular/core';
-import { Router, RouterLink } from '@angular/router';
+import { toSignal } from '@angular/core/rxjs-interop';
+import { filter, map, startWith } from 'rxjs';
+import { NavigationEnd, Router, RouterLink } from '@angular/router';
 import { TranslatePipe } from '../../shared/translate.pipe';
 import { MenuCategoriesComponent } from '../../components/menu-categories/menu-categories.component';
 import { MenuDishesComponent } from '../../components/menu-dishes/menu-dishes.component';
@@ -21,7 +23,16 @@ import { DishService } from '../../feature/dish/dish.service';
 	changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class MenuComponent {
-	readonly showOnlyFavorites = inject(Router).url === '/favorites';
+	private readonly router = inject(Router);
+	readonly routerUrl = toSignal(
+		this.router.events.pipe(
+			filter((event): event is NavigationEnd => event instanceof NavigationEnd),
+			map((event) => event.urlAfterRedirects),
+			startWith(this.router.url),
+		),
+		{ initialValue: this.router.url },
+	);
+	readonly showOnlyFavorites = computed(() => this.routerUrl() === '/favorites');
 	readonly dishCategoryService = inject(DishCategoryService);
 	readonly dishService = inject(DishService);
 	private readonly dishes = computed(() => {
@@ -31,14 +42,14 @@ export class MenuComponent {
 	readonly filteredCategories = computed(() => {
 		const categories = this.dishCategoryService.categories();
 		const dishes = this.dishes();
-		return this.showOnlyFavorites
+		return this.showOnlyFavorites()
 			? categories.filter((category) => this._hasFavorite(category, dishes))
 			: categories;
 	});
 	readonly filteredSelectedCategories = computed(() => {
 		const selectedCategories = this.dishCategoryService.selectedCategories();
 		const dishes = this.dishes();
-		return this.showOnlyFavorites
+		return this.showOnlyFavorites()
 			? selectedCategories.filter((category) => this._hasFavorite(category, dishes))
 			: selectedCategories;
 	});
